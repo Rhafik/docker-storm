@@ -1,0 +1,16 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: ui
+  labels:
+    name: ui
+spec:
+  containers:
+  - name: ui
+    image: nubunto/storm-ui:2.0.0
+    imagePullPolicy: Always
+    ports:
+    - containerPort: 8080
+    resources:
+      limits:
+        cpu: 100m

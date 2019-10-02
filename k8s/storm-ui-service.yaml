@@ -1,0 +1,21 @@
+{
+  "kind": "Service",
+  "apiVersion": "v1",
+  "metadata": {
+    "name": "ui",
+    "labels": {
+      "name": "ui"
+    }
+  },
+  "spec": {
+    "ports": [
+      {
+        "port": 8080
+      }
+    ],
+    "selector": {
+      "name": "ui"
+    },
+    "type": "LoadBalancer"
+  }
+}

@@ -1,5 +1,12 @@
 #!/bin/sh
 
-/configure.sh ${ZOOKEEPER_SERVICE_HOST:-$1}
+CONFIG="$STORM_CONF_DIR/storm.yaml"
 
-exec bin/storm nimbus
+echo $ZOOKEEPER_SERVICE_HOST
+exec bin/storm nimbus	cat << EOF > "$CONFIG"
+storm.zookeeper.servers: ["$ZOOKEEPER_SERVICE_HOST"]
+storm.local.hostname: $NIMBUS_SERVICE_HOST
+storm.local.dir: "/tmp"
+EOF
+cat $CONFIG
+exec storm nimbus

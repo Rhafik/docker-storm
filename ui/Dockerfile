@@ -1,6 +1,6 @@
-FROM mattf/storm-base
+FROM storm:2.0.0
 
-MAINTAINER Matthew Farrellee <matt@cs.wisc.edu>
+MAINTAINER Rhafik Gonzalez <rhafik_daud@hotmail.com>
 
 ADD start.sh /
 
