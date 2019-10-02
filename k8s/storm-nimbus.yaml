@@ -7,7 +7,7 @@ metadata:
 spec:
   containers:
   - name: nimbus
-    image: nubunto/storm-nimbus:2.0.0
+    image: rhafik/storm-nimbus:2.0.0
     imagePullPolicy: Always
     ports:
     - containerPort: 6627
