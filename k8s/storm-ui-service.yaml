@@ -16,6 +16,6 @@
     "selector": {
       "name": "ui"
     },
-    "type": "LoadBalancer"
+    "type": "NodePort"
   }
 }

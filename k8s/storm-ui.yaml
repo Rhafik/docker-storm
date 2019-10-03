@@ -7,7 +7,7 @@ metadata:
 spec:
   containers:
   - name: ui
-    image: rhafik/storm-ui:2.0.0
+    image: rhafik/storm-ui
     imagePullPolicy: Always
     ports:
     - containerPort: 8080

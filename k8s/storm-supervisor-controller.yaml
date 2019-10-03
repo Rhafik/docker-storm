@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: storm-supervisor
-        image: rhafik/storm-worker:2.0.0
+        image: rhafik/storm-worker
         imagePullPolicy: Always
         resources:
           limits:
