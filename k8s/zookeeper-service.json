@@ -16,6 +16,7 @@
       ],
       "selector": {
         "name": "zookeeper"
-      }
+      },
+      "type": "NodePort"
     }
   }

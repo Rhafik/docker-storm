@@ -7,8 +7,8 @@ echo "Nimbus: $NIMBUS_SERVICE_HOST"
 cat << EOF > "$CONFIG"
 storm.zookeeper.servers: ["$ZOOKEEPER_SERVICE_HOST"]
 nimbus.seeds: ["$NIMBUS_SERVICE_HOST"]
-storm.local.hostname: localhost
 storm.local.dir: "/tmp"
+supervisor.thrift.max_buffer_size: 500000
 EOF
 cat $CONFIG
 
